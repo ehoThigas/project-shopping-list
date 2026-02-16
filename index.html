@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Shopping List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Thigas's Shopping List</h1>
+    <main>
+        <form>
+            <div class="input-group">
+                <input type="number" id="quantity" value="1" min="1" required>
+                <span>x</span>
+                <input type="text" id="item" placeholder="Add a new Item" required><br>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="add">Add Item</button>
+                <button type="button" id="clear">Clear List</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <ul id="shopping-list" type="none">
+        </ul>
+    </footer>
+</body>
+</html>
