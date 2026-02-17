@@ -26,7 +26,7 @@ function createListItem(qnt, name){
     li.innerHTML = `
         <div class="item-info">
             <input type="checkbox">
-            <span><strong>${qnt}</strong> x ${name}</span>
+            <span><strong>${qnt}</strong> - ${name}</span>
         </div>
         <button class="delete-btn">
             <span class="material-symbols-outlined">close</span>

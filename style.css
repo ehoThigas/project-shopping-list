@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F4F5FB;
+    margin: auto;
+    font-family: "Inter", sans-serif;
+}
+
+#title{
+    display: block;
+    margin: 1rem auto 3rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+
+main{
+    max-width: 42rem ;
+    background-color: rgb(240, 182, 222);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & h1{
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
+        margin-bottom: 1.75rem;
+    }
+}
+
+#input-group{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    & input{
+        display: block;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        background-color: white;
+        border-radius: 0.75rem;
+        border: 3px solid #D1D5DB;
+
+        &::placeholder{
+            color: #9CA3AF;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    }
+
+    & #quantity{
+        width: 4.5rem;
+        text-align: center;
+    }
+
+    & #item{
+        flex: 1;
+    }
+}
+
+#button-group{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: 0.2s;
+    outline: none;
+
+    & button{
+        flex: 1;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        border: none;
+        white-space: nowrap;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+        width: 50%;
+
+        &:hover{
+            filter: brightness(1.1);
+        }
+
+        &:active{
+            filter: brightness(1.45);
+        }
+    }
+
+    & #add{
+        background-color: #CA3884;
+    }
+
+    & #clear{
+        background-color: rgb(146, 18, 44);
+    }
+}
+
+#list-group {
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+#shopping-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #E5E7EB;
+}
+
+input[type="checkbox"] {
+    accent-color: #CA3884;
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #9CA3AF;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.delete-btn:hover {
+    color: rgb(146, 18, 44); 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
